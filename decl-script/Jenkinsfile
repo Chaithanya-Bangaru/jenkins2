@@ -1,6 +1,6 @@
-import jenkins.model.*
+import jenkins.model.Jenkins
 jenkins = Jenkins.instance
-	pipeline {
+	node {
 		agent any
 		stage('build'){
 			steps {
