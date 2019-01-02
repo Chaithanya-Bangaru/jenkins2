@@ -2,14 +2,14 @@
 	node {
 		agent any
 		stage('build'){
-			//steps {
+			steps {
 				echo 'Building...'
-			//}
+			}
 		}
 		stage('test'){
-			//steps {
+			steps {
 				echo 'Testing...'
-			//}
+			}
 		}
 		
 
