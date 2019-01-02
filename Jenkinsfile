@@ -1,16 +1,36 @@
 	node{
 	agent any
 	stage('build'){
-	echo 'Building...'
+	steps {
+
+        echo 'Building...'
+
+      }
+	
 	}
 	stage('test'){
-	echo 'Testing...'
+	steps {
+
+        echo 'Testing...'
+
+      }
+
 	}
 	stage('install'){
-	echo 'Installing...'
+	steps {
+
+        echo 'Installing...'
+
+      }
+
 	}
 	stage('deploy'){
-	echo 'Deploying...'
+	steps {
+
+        echo 'Deploying...'
+
+      }
+
 	}
 	
 	}
