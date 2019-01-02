@@ -1,0 +1,18 @@
+#!C:\\Users\\rbangaru\\Downloads\\groovy-2.5.5\bin
+//Scripting pipeline example just using maven life cycle phases as an example
+    node {
+            stages {
+               stage('compile'){
+                   echo 'Compiling...'
+               } 
+               stage('verify'){
+                   echo 'Verifying...'
+               } 
+               stage('install'){
+                   echo 'Installing...'
+               }
+               stage('deploy'){
+                   echo 'Deploying...'
+               }  
+        }
+    }
