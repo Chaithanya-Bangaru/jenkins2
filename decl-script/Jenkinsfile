@@ -1,10 +1,13 @@
+#!C:\\Users\\rbangaru\\Downloads\\groovy-2.5.5\bin
 //import jenkins.model.*
 //jenkins = Jenkins.instance
-	node {
-		agent any
-		stage('build'){
-			steps {
-				echo 'Building...'
-			}
-		}
-	}
+    pipeline {
+        agent any
+            stages {
+               stage('build'){
+                 steps {
+                   echo 'Building...'
+                }
+            }
+        }
+    }
