@@ -1,13 +1,29 @@
 #!C:\\Users\\rbangaru\\Downloads\\groovy-2.5.5\bin
 //import jenkins.model.*
 //jenkins = Jenkins.instance
+//Declarative scripting pipeline example just using maven life cycle phases as an example
     pipeline {
         agent any
             stages {
-               stage('build'){
+               stage('compile'){
                  steps {
-                   echo 'Building...'
-                }
-            }
+                   echo 'Compiling...'
+                 }
+               } 
+               stage('verify'){
+                 steps {
+                   echo 'Verifying...'
+                 }
+               } 
+               stage('install'){
+                 steps {
+                   echo 'Installing...'
+                 }
+               }
+               stage('deploy'){
+                 steps {
+                   echo 'Deploying...'
+                 }
+               }  
         }
     }
